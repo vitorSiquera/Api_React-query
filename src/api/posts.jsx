@@ -9,3 +9,27 @@ export async function fetchPost(id) {
     return response.json();
     
 }
+
+export async function createPost(newPost) {
+    const response = await fetch(`http://localhost:3000/posts/`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+       },
+       body: JSON.stringify(newPost)
+    });
+    return response.json();
+    
+}
+
+export async function updatePost(updatePost) {
+    const response = await fetch(`http://localhost:3000/posts/${updatePost.id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+       },
+       body: JSON.stringify(updatePost)
+    });
+    return response.json();
+    
+}
