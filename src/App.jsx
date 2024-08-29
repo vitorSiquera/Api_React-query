@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div>
-      <h1>Awesome blog</h1>
+      <h1>Cadastro de usuários</h1>
       <Routes>
         <Route path="/" element={<PostLists/>} />
         <Route path="/post/:id" element={<Post/>} />  

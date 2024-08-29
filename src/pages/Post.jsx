@@ -17,7 +17,7 @@ const Post = () => {
 
     return(
         <div>
-            <button onClick={() => navigate("/")}>voltar para a lista de posts</button>
+            <button onClick={() => navigate("/")}>Voltar para a lista de usuários</button>
             <h1>{post.title }</h1>
             <p>{post.body}</p>
         </div>

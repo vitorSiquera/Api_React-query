@@ -1,6 +1,6 @@
  import { useState } from "react"
 
- const PostForm = ({onSubmit, initialValue}) => {
+ const PostForm = ({onSubmit, initialValue = {}}) => {
     const [post, setPost] = useState({
         title: initialValue.title || "",
         body: initialValue.body || ""
@@ -33,9 +33,9 @@
 
     return(
         <form onSubmit={handleSubmit}>
-            {renderField('Title')}
-            {renderField('Body')}
-            <button type="submit">Submit</button>
+            {renderField('title')}
+            {renderField('body')}
+            <button type="submit">cadastrar</button>
         </form>
     )
 }

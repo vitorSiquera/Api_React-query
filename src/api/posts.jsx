@@ -33,3 +33,11 @@ export async function updatePost(updatePost) {
     return response.json();
     
 }
+
+export async function deletePost(id) {
+    const response = await fetch(`http://localhost:3000/posts/${id}`, {
+        method: "DELETE",
+    });
+    return response.json();
+    
+}

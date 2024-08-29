@@ -25,7 +25,7 @@ const AddPost = () => {
 
     return(
         <div>
-            <h2>Adicione um novo Post</h2>
+            <h2>Adicione um novo usuário</h2>
             <PostForm onSubmit={handleAddPost} initialValue={{}}/>
         </div>
     )
