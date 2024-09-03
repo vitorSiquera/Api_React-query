@@ -30,20 +30,25 @@ Para rodar este projeto localmente, siga as instruções abaixo:
 
 2. **Navegue para o Diretório do Projeto**
 
-- cd crud-react-query
+   ```bash
+   cd crud-react-query
 
 3. **Instale as Dependências**
 
-- npm install
+   ```bash
+    npm install
 
 4. **Inicie o Servidor de Desenvolvimento**
 
-- npm run dev
+   ```bash
+    npm run dev
 
 5. **Inicie o Servidor JSON**
 
 Em um novo terminal, inicie o servidor JSON para simular o backend:
 
-- npx json-server --watch db.json --port 3000
+   ```bash
+   npx json-server --watch db.json --port 3000
+   ```
 
 O servidor JSON estará disponível em http://localhost:3000
