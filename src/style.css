@@ -17,7 +17,7 @@ body {
     padding: 20px;
 }
 
-/* Form Styles */
+/* Formulario Styles */
 form {
     border: 1px solid #ccc;
     padding: 20px;
@@ -26,7 +26,6 @@ form {
     margin: 0 auto;
 }
 
-/* Form Group Styles */
 .form-group {
     margin-bottom: 15px;
 }
@@ -88,7 +87,7 @@ form {
     transform: scale(0.95);
 }
 
-/* Table Styles */
+/* Tabela Styles */
 .table {
     width: 100%;
     margin: 20px 0;
@@ -134,22 +133,55 @@ form {
 .post-details {
     display: flex;
     flex-direction: column;
+    gap: 5px; 
 }
 
 .post-title {
     font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 5px; 
 }
 
 .post-email {
-    color: #6c757d; /* Cinza para distinguir o email do nome */
+    color: #6c757d; 
 }
 
-/* Add Post Styles */
+
+/* Adicionar Post Styles */
 .add-post {
     margin-bottom: 20px;
 }
- .font{
+
+.font {
     font-size: 15px;
     margin-left: 10vh;
+}
 
- }
+/* Paginação Styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-item {
+    margin: 0 5px;
+    padding: 8px 12px;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.page-item:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.page-item.active {
+    background-color: #007bff;
+    color: #fff;
+    pointer-events: none;
+}
